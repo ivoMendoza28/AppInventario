@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInventario.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#EE5007" Padding="24" CornerRadius="0">
+            <Label Text="SISTEMA DE GESTIÓN DE PRODUCCIÓN" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout>
+            <Button Text="PRODUCCIÓN - INVENTARIO" HorizontalOptions="CenterAndExpand" TextTransform="None" TextColor="White" FontSize="22" BackgroundColor="DarkBlue"
+                    x:Name="btnprod"
+                    Clicked="btnprod_Clicked"
+                    />
+            <Button Text="PICKING" HorizontalOptions="CenterAndExpand" TextTransform="None" TextColor="White" FontSize="22" BackgroundColor="DarkBlue"
+                    x:Name="btnpick"
+                    Clicked="btnpick_Clicked"
+                    />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppInventario.Produccion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#EE5007" Padding="24" CornerRadius="0">
+                <Label Text="PRODUCCION" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <StackLayout>
+                <Button Text="REINICIAR" HorizontalOptions="CenterAndExpand" TextTransform="None" TextColor="White" FontSize="22" BackgroundColor="DarkBlue"
+                        x:Name="btnreiniciar"
+                        Clicked="btnreiniciar_Clicked"
+                    />
+                <Button Text="IMPORTAR" HorizontalOptions="CenterAndExpand" TextTransform="None" TextColor="White" FontSize="22" BackgroundColor="DarkBlue"
+                        x:Name="btnimport"
+                        Clicked="btnimport_Clicked"
+                    />
+                <Button Text="EXPORTAR" HorizontalOptions="CenterAndExpand" TextTransform="None" TextColor="White" FontSize="22" BackgroundColor="DarkBlue"
+                        x:Name="btnexport"
+                        Clicked="btnexport_Clicked"                    
+                        />
+            </StackLayout>
+            <Frame>
+                <Entry Keyboard="Numeric"
+                       Placeholder="CÓDIGO DE PRODUCTO"
+                       TextColor="Black"
+                    />
+            </Frame>
+            <StackLayout>
+                <Label Text="EL CÓDIGO CORRESPONDE A:"
+                    />
+                <Label Text="El Producto"
+                    />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
